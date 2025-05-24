@@ -1,4 +1,4 @@
-# Simple Weather App
+# Advanced Weather App
 
 A advanced Android weather app that display weekly temperatures and can edit or input new temperatures. I called this the MOD of the previous version called : "AndroWeather App"
 
