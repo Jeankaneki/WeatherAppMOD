@@ -25,7 +25,7 @@ A advanced Android weather app that display weekly temperatures and can edit or 
    - Uses a Singleton object (`WeatherData`) to manage and share weather data across activities.
 
 
-* **Navigation**:
+
 ## How to Use
 1. **Welcome Screen**
     - Click "View Weather" to see weekly forecast
