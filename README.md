@@ -66,8 +66,8 @@ A advanced Android weather app that display weekly temperatures and can edit or 
 ## Screenshots
 1. Welcome Screen  
    ![Screenshot_20250524_144948.png](Screenshot_20250524_144948.png)
-2. Weather Display  
-   ![Screenshot_20250524_145008.png](Screenshot_20250524_145008.png)
+2. Weather Display
+   ![Screenshot_20250524_181702.png](Screenshot_20250524_181702.png)
    ![Screenshot_20250524_174038.png](Screenshot_20250524_174038.png)
 3. Input Screen
    ![Screenshot_20250524_174150.png](Screenshot_20250524_174150.png)
