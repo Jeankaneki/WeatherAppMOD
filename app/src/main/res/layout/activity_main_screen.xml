@@ -25,13 +25,13 @@
 
     <TextView
         android:id="@+id/tvWeatherDetails"
-        android:layout_width="338dp"
-        android:layout_height="323dp"
-        android:layout_marginTop="100dp"
-        android:text="show temps"
+        android:layout_width="334dp"
+        android:layout_height="262dp"
+        android:layout_marginTop="50dp"
+        android:text="Monday: 25°C, Sunny\nTuesday: 29°C, Cloudy\n..."
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="34sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,12 +51,31 @@
         app:layout_constraintTop_toBottomOf="@id/tvWeatherDetails"
         tools:text="Average Max Temperature:                                                                    22.1°C" />
 
+
     <Button
-        android:id="@+id/btnBack"
+        android:id="@+id/btnEditTemperatures"
         android:layout_width="295dp"
         android:layout_height="71dp"
         android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1E88E5"
+        android:text="Edit Temperatures"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAverageTemp"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/btnBackToWelcome"
+        android:layout_width="295dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#C62828"
         android:text="Back to Welcome"
         android:textAlignment="center"
@@ -64,7 +83,9 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvAverageTemp" />
+        app:layout_constraintTop_toBottomOf="@id/btnEditTemperatures" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

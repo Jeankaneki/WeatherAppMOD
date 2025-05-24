@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/screenback"
+    android:backgroundTint="#E53935"
+    android:backgroundTintMode="multiply"
     android:padding="16dp"
     tools:context=".InputScreenActivity">
 
@@ -16,26 +19,35 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:text="Edit Temperatures (°C)"
+            android:textAlignment="center"
+            android:textColor="#FDFDFD"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="16dp"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnSaveChanges"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save Changes"
+            android:layout_width="330dp"
+            android:layout_height="73dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="24dp"/>
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#0B9401"
+            android:text="Save Changes"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnCancelInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cancel"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"/>
+            android:layout_marginTop="8dp"
+            android:background="#E53935"
+            android:backgroundTint="#E53935"
+            android:backgroundTintMode="multiply"
+            android:text="Cancel" />
 
     </LinearLayout>
 </ScrollView>

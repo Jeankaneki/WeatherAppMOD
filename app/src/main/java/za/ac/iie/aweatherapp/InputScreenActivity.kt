@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import za.ac.iie.aweatherapp.R.color.white
 import kotlin.apply
 import kotlin.collections.forEachIndexed
 import kotlin.collections.getOrElse
@@ -22,7 +23,6 @@ class InputScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_input_screen)
-
         llTemperatureInputs = findViewById(R.id.llTemperatureInputs)
         val btnSaveChanges: Button = findViewById(R.id.btnSaveChanges)
         val btnCancelInput: Button = findViewById(R.id.btnCancelInput)
@@ -32,6 +32,7 @@ class InputScreenActivity : AppCompatActivity() {
             val dayLabel = TextView(this).apply {
                 text = "$day:"
                 textSize = 16f
+                setTextColor(getColor(white))
                 layoutParams = LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.WRAP_CONTENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT
@@ -40,9 +41,10 @@ class InputScreenActivity : AppCompatActivity() {
             llTemperatureInputs.addView(dayLabel)
 
             val tempInput = EditText(this).apply {
-                id = index // Optional: set an ID if needed for other purposes
+                id = index
                 inputType = InputType.TYPE_CLASS_NUMBER // For numeric input
                 setText(WeatherData.maxTemps.getOrNull(index)?.toString() ?: "0")
+                setTextColor(getColor(white))
                 layoutParams = LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT

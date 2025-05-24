@@ -1,6 +1,7 @@
 package za.ac.iie.aweatherapp
 
 object WeatherData {
+
     val days = mutableListOf(
         "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
     )
