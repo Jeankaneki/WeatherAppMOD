@@ -75,7 +75,6 @@ A advanced Android weather app that display weekly temperatures and can edit or 
 ##  Author
 
 * **Name**: [Jin Kaneki]
-* **Student Number**: [ST10492515]
 
 link to the repository:https://github.com/Jeankaneki/WeatherAppMOD.git
 
